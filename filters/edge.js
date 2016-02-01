@@ -13,11 +13,12 @@ export default function EdgeFilter(){
 		var width = input.width, height = input.height;
 	  	var inputData = input.data;
 	  	var outputData = [];
+                var rh = 0, gh = 0, bh = 0;
+                var rv = 0, gv = 0, bv = 0;
 	  	for (var y = 0; y < height; y++) {
 	        for (var x = 0; x < width; x++) {
 	            var pixel = (y*width + x)*4;
-	            var rh = 0; gh = 0; bh = 0;
-	            var rv = 0; gv = 0; bv = 0;
+	            rh = 0, gh = 0, bh = 0, rv = 0, gv = 0, bv = 0;
 	            for(var row = -1; row <= 1; row++){
 	            	var iy = y+row;
 	            	var ioffset;
