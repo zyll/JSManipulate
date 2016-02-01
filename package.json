@@ -1,0 +1,35 @@
+{
+  "name": "jsmanipulate",
+  "version": "1.0.0",
+  "description": "JSManipulate  ============ JSManipulate is an image filter and effects library written in Javascript for client-side manipulation of images on a web page.",
+  "main": "jsmanipulate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyll/JSManipulate.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zyll/JSManipulate/issues"
+  },
+  "homepage": "https://github.com/zyll/JSManipulate#readme",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babelify": "^7.2.0"
+  }
+}
